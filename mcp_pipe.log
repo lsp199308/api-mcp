@@ -1,0 +1,120 @@
+2025-06-27 00:23:55,418 - MCP_PIPE - INFO - 使用MCP端点: wss://api.xiaozhi.me/mcp/?token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjM3MjEzNywiYWdlbnRJZCI6NDIyMDAyLCJlbmRwb2ludElkIjoiYWdlbnRfNDIyMDAyIiwicHVycG9zZSI6Im1jcC1lbmRwb2ludCIsImlhdCI6MTc1MDk1NDU3M30.i1L4MN6N4NAWPxSTRqZLjDq6gHyHaqygV62kiu4gx1CNvwzvPiPtzsRhvY49SUKv9L23Rcno9bOmqH0jiU6MzA
+2025-06-27 00:23:55,419 - MCP_PIPE - INFO - Connecting to WebSocket server: wss://api.xiaozhi.me/mcp/?token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjM3MjEzNywiYWdlbnRJZCI6NDIyMDAyLCJlbmRwb2ludElkIjoiYWdlbnRfNDIyMDAyIiwicHVycG9zZSI6Im1jcC1lbmRwb2ludCIsImlhdCI6MTc1MDk1NDU3M30.i1L4MN6N4NAWPxSTRqZLjDq6gHyHaqygV62kiu4gx1CNvwzvPiPtzsRhvY49SUKv9L23Rcno9bOmqH0jiU6MzA
+2025-06-27 00:23:55,788 - MCP_PIPE - INFO - Successfully connected to WebSocket server
+2025-06-27 00:23:55,801 - MCP_PIPE - INFO - Started c:\Users\liujiyu\Desktop\mcp-python\联网查询.py process
+2025-06-27 10:00:44,859 - MCP_PIPE - ERROR - Error in WebSocket to process pipe: sent 1011 (internal error) keepalive ping timeout; no close frame received
+2025-06-27 10:00:44,888 - MCP_PIPE - ERROR - WebSocket connection closed: sent 1011 (internal error) keepalive ping timeout; no close frame received
+2025-06-27 10:00:44,890 - MCP_PIPE - INFO - Terminating c:\Users\liujiyu\Desktop\mcp-python\联网查询.py process
+2025-06-27 10:00:44,903 - MCP_PIPE - INFO - c:\Users\liujiyu\Desktop\mcp-python\联网查询.py process terminated
+2025-06-27 10:00:44,903 - MCP_PIPE - WARNING - Connection closed (attempt: 1): sent 1011 (internal error) keepalive ping timeout; no close frame received
+2025-06-27 10:00:44,904 - MCP_PIPE - INFO - Waiting 2.00 seconds before reconnection attempt 1...
+2025-06-27 10:00:44,904 - MCP_PIPE - INFO - Process has ended output
+2025-06-27 10:00:44,905 - MCP_PIPE - INFO - Process has ended stderr output
+2025-06-27 10:00:46,918 - MCP_PIPE - INFO - Connecting to WebSocket server: wss://api.xiaozhi.me/mcp/?token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjM3MjEzNywiYWdlbnRJZCI6NDIyMDAyLCJlbmRwb2ludElkIjoiYWdlbnRfNDIyMDAyIiwicHVycG9zZSI6Im1jcC1lbmRwb2ludCIsImlhdCI6MTc1MDk1NDU3M30.i1L4MN6N4NAWPxSTRqZLjDq6gHyHaqygV62kiu4gx1CNvwzvPiPtzsRhvY49SUKv9L23Rcno9bOmqH0jiU6MzA
+2025-06-27 10:00:47,222 - MCP_PIPE - INFO - Successfully connected to WebSocket server
+2025-06-27 10:36:46,376 - MCP_PIPE - INFO - 使用MCP端点: wss://api.xiaozhi.me/mcp/?token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjM3MjEzNywiYWdlbnRJZCI6NDIyMDAyLCJlbmRwb2ludElkIjoiYWdlbnRfNDIyMDAyIiwicHVycG9zZSI6Im1jcC1lbmRwb2ludCIsImlhdCI6MTc1MDk5MTc5Nn0.bDbSmxoWQPvLZK_q5EYUsriAwp3NJ-QrDOzkOyMjlyDhd52WPc5nsvhHSMSm1qO2zlK0B0bq2RAhR7Xump_qLA
+2025-06-27 10:36:46,378 - MCP_PIPE - INFO - Connecting to WebSocket server: wss://api.xiaozhi.me/mcp/?token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjM3MjEzNywiYWdlbnRJZCI6NDIyMDAyLCJlbmRwb2ludElkIjoiYWdlbnRfNDIyMDAyIiwicHVycG9zZSI6Im1jcC1lbmRwb2ludCIsImlhdCI6MTc1MDk5MTc5Nn0.bDbSmxoWQPvLZK_q5EYUsriAwp3NJ-QrDOzkOyMjlyDhd52WPc5nsvhHSMSm1qO2zlK0B0bq2RAhR7Xump_qLA
+2025-06-27 10:36:46,848 - MCP_PIPE - INFO - Successfully connected to WebSocket server
+2025-06-27 10:36:46,935 - MCP_PIPE - INFO - Started c:\Users\liujiyu\Desktop\mcp-python\universal_mcp_tool.py process
+2025-06-27 10:37:27,505 - MCP_PIPE - INFO - Process has ended output
+2025-06-27 10:37:27,505 - MCP_PIPE - INFO - Process has ended stderr output
+2025-06-27 10:40:20,073 - MCP_PIPE - INFO - 使用MCP端点: wss://api.xiaozhi.me/mcp/?token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjM3MjEzNywiYWdlbnRJZCI6NDM2MDkxLCJlbmRwb2ludElkIjoiYWdlbnRfNDM2MDkxIiwicHVycG9zZSI6Im1jcC1lbmRwb2ludCIsImlhdCI6MTc1MDk5MjAwN30.tWeHOcrgaSy616JmTB57xELpGoSuUt4TYXXKpj0q9vtrfDxrnFj9pOyavwftkNx5LffKwrgyUoOTffmqezUZxg
+2025-06-27 10:40:20,075 - MCP_PIPE - INFO - Connecting to WebSocket server: wss://api.xiaozhi.me/mcp/?token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjM3MjEzNywiYWdlbnRJZCI6NDM2MDkxLCJlbmRwb2ludElkIjoiYWdlbnRfNDM2MDkxIiwicHVycG9zZSI6Im1jcC1lbmRwb2ludCIsImlhdCI6MTc1MDk5MjAwN30.tWeHOcrgaSy616JmTB57xELpGoSuUt4TYXXKpj0q9vtrfDxrnFj9pOyavwftkNx5LffKwrgyUoOTffmqezUZxg
+2025-06-27 10:40:20,445 - MCP_PIPE - INFO - Successfully connected to WebSocket server
+2025-06-27 10:40:20,530 - MCP_PIPE - INFO - Started c:\Users\liujiyu\Desktop\mcp-python\universal_mcp_tool.py process
+2025-06-27 10:41:36,672 - MCP_PIPE - INFO - Process has ended output
+2025-06-27 10:41:36,672 - MCP_PIPE - INFO - Process has ended stderr output
+2025-06-27 10:43:55,758 - MCP_PIPE - INFO - 使用MCP端点: wss://api.xiaozhi.me/mcp/?token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjM3MjEzNywiYWdlbnRJZCI6NDM2MDkxLCJlbmRwb2ludElkIjoiYWdlbnRfNDM2MDkxIiwicHVycG9zZSI6Im1jcC1lbmRwb2ludCIsImlhdCI6MTc1MDk5MjAwN30.tWeHOcrgaSy616JmTB57xELpGoSuUt4TYXXKpj0q9vtrfDxrnFj9pOyavwftkNx5LffKwrgyUoOTffmqezUZxg
+2025-06-27 10:43:55,760 - MCP_PIPE - INFO - Connecting to WebSocket server: wss://api.xiaozhi.me/mcp/?token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjM3MjEzNywiYWdlbnRJZCI6NDM2MDkxLCJlbmRwb2ludElkIjoiYWdlbnRfNDM2MDkxIiwicHVycG9zZSI6Im1jcC1lbmRwb2ludCIsImlhdCI6MTc1MDk5MjAwN30.tWeHOcrgaSy616JmTB57xELpGoSuUt4TYXXKpj0q9vtrfDxrnFj9pOyavwftkNx5LffKwrgyUoOTffmqezUZxg
+2025-06-27 10:43:56,148 - MCP_PIPE - INFO - Successfully connected to WebSocket server
+2025-06-27 10:43:56,235 - MCP_PIPE - INFO - Started c:\Users\liujiyu\Desktop\mcp-python\universal_mcp_tool.py process
+2025-06-27 10:53:16,493 - MCP_PIPE - INFO - 使用MCP端点: wss://api.xiaozhi.me/mcp/?token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjM3MjEzNywiYWdlbnRJZCI6NDM2MDkxLCJlbmRwb2ludElkIjoiYWdlbnRfNDM2MDkxIiwicHVycG9zZSI6Im1jcC1lbmRwb2ludCIsImlhdCI6MTc1MDk5MjAwN30.tWeHOcrgaSy616JmTB57xELpGoSuUt4TYXXKpj0q9vtrfDxrnFj9pOyavwftkNx5LffKwrgyUoOTffmqezUZxg
+2025-06-27 10:53:16,495 - MCP_PIPE - INFO - Connecting to WebSocket server: wss://api.xiaozhi.me/mcp/?token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjM3MjEzNywiYWdlbnRJZCI6NDM2MDkxLCJlbmRwb2ludElkIjoiYWdlbnRfNDM2MDkxIiwicHVycG9zZSI6Im1jcC1lbmRwb2ludCIsImlhdCI6MTc1MDk5MjAwN30.tWeHOcrgaSy616JmTB57xELpGoSuUt4TYXXKpj0q9vtrfDxrnFj9pOyavwftkNx5LffKwrgyUoOTffmqezUZxg
+2025-06-27 10:53:17,187 - MCP_PIPE - INFO - Successfully connected to WebSocket server
+2025-06-27 10:53:17,271 - MCP_PIPE - INFO - Started c:\Users\liujiyu\Desktop\mcp-python\universal_mcp_tool.py process
+2025-06-27 10:54:48,086 - MCP_PIPE - INFO - Process has ended output
+2025-06-27 10:54:48,086 - MCP_PIPE - INFO - Process has ended stderr output
+2025-06-27 10:54:55,887 - MCP_PIPE - INFO - Process has ended output
+2025-06-27 10:54:55,888 - MCP_PIPE - INFO - Process has ended stderr output
+2025-06-27 10:55:27,008 - MCP_PIPE - INFO - 使用MCP端点: wss://api.xiaozhi.me/mcp/?token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjM3MjEzNywiYWdlbnRJZCI6NDM2MDkxLCJlbmRwb2ludElkIjoiYWdlbnRfNDM2MDkxIiwicHVycG9zZSI6Im1jcC1lbmRwb2ludCIsImlhdCI6MTc1MDk5MjAwN30.tWeHOcrgaSy616JmTB57xELpGoSuUt4TYXXKpj0q9vtrfDxrnFj9pOyavwftkNx5LffKwrgyUoOTffmqezUZxg
+2025-06-27 10:55:27,010 - MCP_PIPE - INFO - Connecting to WebSocket server: wss://api.xiaozhi.me/mcp/?token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjM3MjEzNywiYWdlbnRJZCI6NDM2MDkxLCJlbmRwb2ludElkIjoiYWdlbnRfNDM2MDkxIiwicHVycG9zZSI6Im1jcC1lbmRwb2ludCIsImlhdCI6MTc1MDk5MjAwN30.tWeHOcrgaSy616JmTB57xELpGoSuUt4TYXXKpj0q9vtrfDxrnFj9pOyavwftkNx5LffKwrgyUoOTffmqezUZxg
+2025-06-27 10:55:27,365 - MCP_PIPE - INFO - Successfully connected to WebSocket server
+2025-06-27 10:55:27,449 - MCP_PIPE - INFO - Started c:\Users\liujiyu\Desktop\mcp-python\universal_mcp_tool.py process
+2025-06-27 10:55:29,165 - MCP_PIPE - ERROR - Error in WebSocket to process pipe: no close frame received or sent
+2025-06-27 10:55:29,165 - MCP_PIPE - ERROR - WebSocket connection closed: no close frame received or sent
+2025-06-27 10:55:29,166 - MCP_PIPE - INFO - Terminating c:\Users\liujiyu\Desktop\mcp-python\universal_mcp_tool.py process
+2025-06-27 10:55:29,174 - MCP_PIPE - INFO - c:\Users\liujiyu\Desktop\mcp-python\universal_mcp_tool.py process terminated
+2025-06-27 10:55:29,174 - MCP_PIPE - WARNING - Connection closed (attempt: 1): no close frame received or sent
+2025-06-27 10:55:29,174 - MCP_PIPE - INFO - Waiting 2.00 seconds before reconnection attempt 1...
+2025-06-27 10:55:29,175 - MCP_PIPE - INFO - Process has ended stderr output
+2025-06-27 10:55:29,175 - MCP_PIPE - INFO - Process has ended output
+2025-06-27 10:55:31,178 - MCP_PIPE - INFO - Connecting to WebSocket server: wss://api.xiaozhi.me/mcp/?token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjM3MjEzNywiYWdlbnRJZCI6NDM2MDkxLCJlbmRwb2ludElkIjoiYWdlbnRfNDM2MDkxIiwicHVycG9zZSI6Im1jcC1lbmRwb2ludCIsImlhdCI6MTc1MDk5MjAwN30.tWeHOcrgaSy616JmTB57xELpGoSuUt4TYXXKpj0q9vtrfDxrnFj9pOyavwftkNx5LffKwrgyUoOTffmqezUZxg
+2025-06-27 10:55:31,421 - MCP_PIPE - INFO - Successfully connected to WebSocket server
+2025-06-27 10:55:31,504 - MCP_PIPE - INFO - Started c:\Users\liujiyu\Desktop\mcp-python\universal_mcp_tool.py process
+2025-06-27 10:57:50,684 - MCP_PIPE - INFO - Received interrupt signal, shutting down...
+2025-06-27 10:57:50,775 - MCP_PIPE - INFO - Terminating c:\Users\liujiyu\Desktop\mcp-python\universal_mcp_tool.py process
+2025-06-27 10:57:50,785 - MCP_PIPE - INFO - c:\Users\liujiyu\Desktop\mcp-python\universal_mcp_tool.py process terminated
+2025-06-27 10:57:58,004 - MCP_PIPE - INFO - 使用MCP端点: wss://api.xiaozhi.me/mcp/?token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjM3MjEzNywiYWdlbnRJZCI6NDM2MDkxLCJlbmRwb2ludElkIjoiYWdlbnRfNDM2MDkxIiwicHVycG9zZSI6Im1jcC1lbmRwb2ludCIsImlhdCI6MTc1MDk5MjAwN30.tWeHOcrgaSy616JmTB57xELpGoSuUt4TYXXKpj0q9vtrfDxrnFj9pOyavwftkNx5LffKwrgyUoOTffmqezUZxg
+2025-06-27 10:57:58,006 - MCP_PIPE - INFO - Connecting to WebSocket server: wss://api.xiaozhi.me/mcp/?token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjM3MjEzNywiYWdlbnRJZCI6NDM2MDkxLCJlbmRwb2ludElkIjoiYWdlbnRfNDM2MDkxIiwicHVycG9zZSI6Im1jcC1lbmRwb2ludCIsImlhdCI6MTc1MDk5MjAwN30.tWeHOcrgaSy616JmTB57xELpGoSuUt4TYXXKpj0q9vtrfDxrnFj9pOyavwftkNx5LffKwrgyUoOTffmqezUZxg
+2025-06-27 10:57:58,330 - MCP_PIPE - INFO - Successfully connected to WebSocket server
+2025-06-27 10:57:58,419 - MCP_PIPE - INFO - Started c:\Users\liujiyu\Desktop\mcp-python\universal_mcp_tool.py process
+2025-06-27 11:01:33,563 - MCP_PIPE - INFO - 使用MCP端点: wss://api.xiaozhi.me/mcp/?token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjM3MjEzNywiYWdlbnRJZCI6NDM2MDkxLCJlbmRwb2ludElkIjoiYWdlbnRfNDM2MDkxIiwicHVycG9zZSI6Im1jcC1lbmRwb2ludCIsImlhdCI6MTc1MDk5MjAwN30.tWeHOcrgaSy616JmTB57xELpGoSuUt4TYXXKpj0q9vtrfDxrnFj9pOyavwftkNx5LffKwrgyUoOTffmqezUZxg
+2025-06-27 11:01:33,564 - MCP_PIPE - INFO - Connecting to WebSocket server: wss://api.xiaozhi.me/mcp/?token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjM3MjEzNywiYWdlbnRJZCI6NDM2MDkxLCJlbmRwb2ludElkIjoiYWdlbnRfNDM2MDkxIiwicHVycG9zZSI6Im1jcC1lbmRwb2ludCIsImlhdCI6MTc1MDk5MjAwN30.tWeHOcrgaSy616JmTB57xELpGoSuUt4TYXXKpj0q9vtrfDxrnFj9pOyavwftkNx5LffKwrgyUoOTffmqezUZxg
+2025-06-27 11:01:33,912 - MCP_PIPE - INFO - Successfully connected to WebSocket server
+2025-06-27 11:01:33,997 - MCP_PIPE - INFO - Started c:\Users\liujiyu\Desktop\mcp-python\universal_mcp_tool.py process
+2025-06-27 11:06:21,427 - MCP_PIPE - INFO - Process has ended output
+2025-06-27 11:06:21,427 - MCP_PIPE - INFO - Process has ended stderr output
+2025-06-27 11:06:22,327 - MCP_PIPE - INFO - Process has ended output
+2025-06-27 11:06:22,327 - MCP_PIPE - INFO - Process has ended stderr output
+2025-06-27 11:06:27,395 - MCP_PIPE - INFO - 使用MCP端点: wss://api.xiaozhi.me/mcp/?token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjM3MjEzNywiYWdlbnRJZCI6NDM2MDkxLCJlbmRwb2ludElkIjoiYWdlbnRfNDM2MDkxIiwicHVycG9zZSI6Im1jcC1lbmRwb2ludCIsImlhdCI6MTc1MDk5MjAwN30.tWeHOcrgaSy616JmTB57xELpGoSuUt4TYXXKpj0q9vtrfDxrnFj9pOyavwftkNx5LffKwrgyUoOTffmqezUZxg
+2025-06-27 11:06:27,397 - MCP_PIPE - INFO - Connecting to WebSocket server: wss://api.xiaozhi.me/mcp/?token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjM3MjEzNywiYWdlbnRJZCI6NDM2MDkxLCJlbmRwb2ludElkIjoiYWdlbnRfNDM2MDkxIiwicHVycG9zZSI6Im1jcC1lbmRwb2ludCIsImlhdCI6MTc1MDk5MjAwN30.tWeHOcrgaSy616JmTB57xELpGoSuUt4TYXXKpj0q9vtrfDxrnFj9pOyavwftkNx5LffKwrgyUoOTffmqezUZxg
+2025-06-27 11:06:27,791 - MCP_PIPE - INFO - Successfully connected to WebSocket server
+2025-06-27 11:06:27,877 - MCP_PIPE - INFO - Started c:\Users\liujiyu\Desktop\mcp-python\universal_mcp_tool.py process
+2025-06-27 11:11:52,111 - MCP_PIPE - INFO - Process has ended output
+2025-06-27 11:11:52,111 - MCP_PIPE - INFO - Process has ended stderr output
+2025-06-27 11:11:55,427 - MCP_PIPE - INFO - 使用MCP端点: wss://api.xiaozhi.me/mcp/?token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjM3MjEzNywiYWdlbnRJZCI6NDM2MDkxLCJlbmRwb2ludElkIjoiYWdlbnRfNDM2MDkxIiwicHVycG9zZSI6Im1jcC1lbmRwb2ludCIsImlhdCI6MTc1MDk5MjAwN30.tWeHOcrgaSy616JmTB57xELpGoSuUt4TYXXKpj0q9vtrfDxrnFj9pOyavwftkNx5LffKwrgyUoOTffmqezUZxg
+2025-06-27 11:11:55,429 - MCP_PIPE - INFO - Connecting to WebSocket server: wss://api.xiaozhi.me/mcp/?token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjM3MjEzNywiYWdlbnRJZCI6NDM2MDkxLCJlbmRwb2ludElkIjoiYWdlbnRfNDM2MDkxIiwicHVycG9zZSI6Im1jcC1lbmRwb2ludCIsImlhdCI6MTc1MDk5MjAwN30.tWeHOcrgaSy616JmTB57xELpGoSuUt4TYXXKpj0q9vtrfDxrnFj9pOyavwftkNx5LffKwrgyUoOTffmqezUZxg
+2025-06-27 11:11:55,793 - MCP_PIPE - INFO - Successfully connected to WebSocket server
+2025-06-27 11:11:55,886 - MCP_PIPE - INFO - Started c:\Users\liujiyu\Desktop\mcp-python\universal_mcp_tool.py process
+2025-06-27 11:22:14,792 - MCP_PIPE - INFO - 使用MCP端点: wss://api.xiaozhi.me/mcp/?token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjM3MjEzNywiYWdlbnRJZCI6NDM2MDkxLCJlbmRwb2ludElkIjoiYWdlbnRfNDM2MDkxIiwicHVycG9zZSI6Im1jcC1lbmRwb2ludCIsImlhdCI6MTc1MDk5MjAwN30.tWeHOcrgaSy616JmTB57xELpGoSuUt4TYXXKpj0q9vtrfDxrnFj9pOyavwftkNx5LffKwrgyUoOTffmqezUZxg
+2025-06-27 11:22:14,793 - MCP_PIPE - INFO - Connecting to WebSocket server: wss://api.xiaozhi.me/mcp/?token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjM3MjEzNywiYWdlbnRJZCI6NDM2MDkxLCJlbmRwb2ludElkIjoiYWdlbnRfNDM2MDkxIiwicHVycG9zZSI6Im1jcC1lbmRwb2ludCIsImlhdCI6MTc1MDk5MjAwN30.tWeHOcrgaSy616JmTB57xELpGoSuUt4TYXXKpj0q9vtrfDxrnFj9pOyavwftkNx5LffKwrgyUoOTffmqezUZxg
+2025-06-27 11:22:15,191 - MCP_PIPE - INFO - Successfully connected to WebSocket server
+2025-06-27 11:22:15,283 - MCP_PIPE - INFO - Started c:\Users\liujiyu\Desktop\mcp-python\universal_mcp_tool.py process
+2025-06-27 11:22:46,290 - MCP_PIPE - INFO - Process has ended output
+2025-06-27 11:22:46,291 - MCP_PIPE - INFO - Process has ended stderr output
+2025-06-27 11:29:14,497 - MCP_PIPE - INFO - Process has ended output
+2025-06-27 11:29:14,498 - MCP_PIPE - INFO - Process has ended stderr output
+2025-06-27 11:29:18,315 - MCP_PIPE - INFO - 使用MCP端点: wss://api.xiaozhi.me/mcp/?token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjM3MjEzNywiYWdlbnRJZCI6NDM2MDkxLCJlbmRwb2ludElkIjoiYWdlbnRfNDM2MDkxIiwicHVycG9zZSI6Im1jcC1lbmRwb2ludCIsImlhdCI6MTc1MDk5MjAwN30.tWeHOcrgaSy616JmTB57xELpGoSuUt4TYXXKpj0q9vtrfDxrnFj9pOyavwftkNx5LffKwrgyUoOTffmqezUZxg
+2025-06-27 11:29:18,317 - MCP_PIPE - INFO - Connecting to WebSocket server: wss://api.xiaozhi.me/mcp/?token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjM3MjEzNywiYWdlbnRJZCI6NDM2MDkxLCJlbmRwb2ludElkIjoiYWdlbnRfNDM2MDkxIiwicHVycG9zZSI6Im1jcC1lbmRwb2ludCIsImlhdCI6MTc1MDk5MjAwN30.tWeHOcrgaSy616JmTB57xELpGoSuUt4TYXXKpj0q9vtrfDxrnFj9pOyavwftkNx5LffKwrgyUoOTffmqezUZxg
+2025-06-27 11:29:18,689 - MCP_PIPE - INFO - Successfully connected to WebSocket server
+2025-06-27 11:29:18,783 - MCP_PIPE - INFO - Started c:\Users\liujiyu\Desktop\mcp-python\universal_mcp_tool.py process
+2025-06-27 11:41:58,024 - MCP_PIPE - INFO - Process has ended output
+2025-06-27 11:41:58,024 - MCP_PIPE - INFO - Process has ended stderr output
+2025-06-27 11:42:01,390 - MCP_PIPE - INFO - 使用MCP端点: wss://api.xiaozhi.me/mcp/?token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjM3MjEzNywiYWdlbnRJZCI6NDM2MDkxLCJlbmRwb2ludElkIjoiYWdlbnRfNDM2MDkxIiwicHVycG9zZSI6Im1jcC1lbmRwb2ludCIsImlhdCI6MTc1MDk5MjAwN30.tWeHOcrgaSy616JmTB57xELpGoSuUt4TYXXKpj0q9vtrfDxrnFj9pOyavwftkNx5LffKwrgyUoOTffmqezUZxg
+2025-06-27 11:42:01,392 - MCP_PIPE - INFO - Connecting to WebSocket server: wss://api.xiaozhi.me/mcp/?token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjM3MjEzNywiYWdlbnRJZCI6NDM2MDkxLCJlbmRwb2ludElkIjoiYWdlbnRfNDM2MDkxIiwicHVycG9zZSI6Im1jcC1lbmRwb2ludCIsImlhdCI6MTc1MDk5MjAwN30.tWeHOcrgaSy616JmTB57xELpGoSuUt4TYXXKpj0q9vtrfDxrnFj9pOyavwftkNx5LffKwrgyUoOTffmqezUZxg
+2025-06-27 11:42:01,738 - MCP_PIPE - INFO - Successfully connected to WebSocket server
+2025-06-27 11:42:01,839 - MCP_PIPE - INFO - Started c:\Users\liujiyu\Desktop\mcp-python\universal_mcp_tool.py process
+2025-06-27 11:49:15,712 - MCP_PIPE - INFO - 使用MCP端点: wss://api.xiaozhi.me/mcp/?token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjM3MjEzNywiYWdlbnRJZCI6NDM2MDkxLCJlbmRwb2ludElkIjoiYWdlbnRfNDM2MDkxIiwicHVycG9zZSI6Im1jcC1lbmRwb2ludCIsImlhdCI6MTc1MDk5MjAwN30.tWeHOcrgaSy616JmTB57xELpGoSuUt4TYXXKpj0q9vtrfDxrnFj9pOyavwftkNx5LffKwrgyUoOTffmqezUZxg
+2025-06-27 11:49:15,714 - MCP_PIPE - INFO - Connecting to WebSocket server: wss://api.xiaozhi.me/mcp/?token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjM3MjEzNywiYWdlbnRJZCI6NDM2MDkxLCJlbmRwb2ludElkIjoiYWdlbnRfNDM2MDkxIiwicHVycG9zZSI6Im1jcC1lbmRwb2ludCIsImlhdCI6MTc1MDk5MjAwN30.tWeHOcrgaSy616JmTB57xELpGoSuUt4TYXXKpj0q9vtrfDxrnFj9pOyavwftkNx5LffKwrgyUoOTffmqezUZxg
+2025-06-27 11:49:16,082 - MCP_PIPE - INFO - Successfully connected to WebSocket server
+2025-06-27 11:49:16,177 - MCP_PIPE - INFO - Started c:\Users\liujiyu\Desktop\mcp-python\universal_mcp_tool.py process
+2025-06-27 11:55:09,943 - MCP_PIPE - INFO - Process has ended output
+2025-06-27 11:55:09,943 - MCP_PIPE - INFO - Process has ended stderr output
+2025-06-27 11:55:11,155 - MCP_PIPE - INFO - Process has ended output
+2025-06-27 11:55:11,155 - MCP_PIPE - INFO - Process has ended stderr output
+2025-06-27 11:55:25,105 - MCP_PIPE - INFO - 使用MCP端点: wss://api.xiaozhi.me/mcp/?token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjM3MjEzNywiYWdlbnRJZCI6NDM2MDkxLCJlbmRwb2ludElkIjoiYWdlbnRfNDM2MDkxIiwicHVycG9zZSI6Im1jcC1lbmRwb2ludCIsImlhdCI6MTc1MDk5MjAwN30.tWeHOcrgaSy616JmTB57xELpGoSuUt4TYXXKpj0q9vtrfDxrnFj9pOyavwftkNx5LffKwrgyUoOTffmqezUZxg
+2025-06-27 11:55:25,107 - MCP_PIPE - INFO - Connecting to WebSocket server: wss://api.xiaozhi.me/mcp/?token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjM3MjEzNywiYWdlbnRJZCI6NDM2MDkxLCJlbmRwb2ludElkIjoiYWdlbnRfNDM2MDkxIiwicHVycG9zZSI6Im1jcC1lbmRwb2ludCIsImlhdCI6MTc1MDk5MjAwN30.tWeHOcrgaSy616JmTB57xELpGoSuUt4TYXXKpj0q9vtrfDxrnFj9pOyavwftkNx5LffKwrgyUoOTffmqezUZxg
+2025-06-27 11:55:25,562 - MCP_PIPE - INFO - Successfully connected to WebSocket server
+2025-06-27 11:55:25,663 - MCP_PIPE - INFO - Started c:\Users\liujiyu\Desktop\mcp-python\universal_mcp_tool.py process
+2025-06-27 11:57:05,491 - MCP_PIPE - INFO - Process has ended stderr output
+2025-06-27 11:57:05,491 - MCP_PIPE - INFO - Process has ended output
+2025-06-27 12:02:31,288 - MCP_PIPE - INFO - 使用MCP端点: wss://api.xiaozhi.me/mcp/?token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjM3MjEzNywiYWdlbnRJZCI6NDM2MDkxLCJlbmRwb2ludElkIjoiYWdlbnRfNDM2MDkxIiwicHVycG9zZSI6Im1jcC1lbmRwb2ludCIsImlhdCI6MTc1MDk5MjAwN30.tWeHOcrgaSy616JmTB57xELpGoSuUt4TYXXKpj0q9vtrfDxrnFj9pOyavwftkNx5LffKwrgyUoOTffmqezUZxg
+2025-06-27 12:02:31,289 - MCP_PIPE - INFO - Connecting to WebSocket server: wss://api.xiaozhi.me/mcp/?token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjM3MjEzNywiYWdlbnRJZCI6NDM2MDkxLCJlbmRwb2ludElkIjoiYWdlbnRfNDM2MDkxIiwicHVycG9zZSI6Im1jcC1lbmRwb2ludCIsImlhdCI6MTc1MDk5MjAwN30.tWeHOcrgaSy616JmTB57xELpGoSuUt4TYXXKpj0q9vtrfDxrnFj9pOyavwftkNx5LffKwrgyUoOTffmqezUZxg
+2025-06-27 12:02:31,637 - MCP_PIPE - INFO - Successfully connected to WebSocket server
+2025-06-27 12:02:31,739 - MCP_PIPE - INFO - Started c:\Users\liujiyu\Desktop\mcp-python\universal_mcp_tool.py process
+2025-06-27 12:03:15,581 - MCP_PIPE - INFO - Process has ended output
+2025-06-27 12:03:15,581 - MCP_PIPE - INFO - Process has ended stderr output
+2025-06-27 12:04:25,121 - MCP_PIPE - INFO - 使用MCP端点: wss://api.xiaozhi.me/mcp/?token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjM3MjEzNywiYWdlbnRJZCI6NDM2MDkxLCJlbmRwb2ludElkIjoiYWdlbnRfNDM2MDkxIiwicHVycG9zZSI6Im1jcC1lbmRwb2ludCIsImlhdCI6MTc1MDk5MjAwN30.tWeHOcrgaSy616JmTB57xELpGoSuUt4TYXXKpj0q9vtrfDxrnFj9pOyavwftkNx5LffKwrgyUoOTffmqezUZxg
+2025-06-27 12:04:25,124 - MCP_PIPE - INFO - Connecting to WebSocket server: wss://api.xiaozhi.me/mcp/?token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjM3MjEzNywiYWdlbnRJZCI6NDM2MDkxLCJlbmRwb2ludElkIjoiYWdlbnRfNDM2MDkxIiwicHVycG9zZSI6Im1jcC1lbmRwb2ludCIsImlhdCI6MTc1MDk5MjAwN30.tWeHOcrgaSy616JmTB57xELpGoSuUt4TYXXKpj0q9vtrfDxrnFj9pOyavwftkNx5LffKwrgyUoOTffmqezUZxg
+2025-06-27 12:04:25,499 - MCP_PIPE - INFO - Successfully connected to WebSocket server
+2025-06-27 12:04:25,612 - MCP_PIPE - INFO - Started c:\Users\liujiyu\Desktop\mcp-python\universal_mcp_tool.py process
