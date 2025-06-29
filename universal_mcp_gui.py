@@ -404,8 +404,7 @@ class UniversalMCPGUI:
         """Save MCP endpoint and API key"""
         self.log("正在保存基本配置...")
         new_config = {
-            "MCP_ENDPOINT": self.mcp_entry.get(),
-            "ZHIPU_API_KEY": self.api_entry.get()
+            "MCP_ENDPOINT": str(self.mcp_entry.get())
         }
         save_config(new_config)
         self.config = new_config
