@@ -1,4 +1,4 @@
-![Uploading image.png…]()
+
 
 # Universal MCP Tool
 
@@ -44,7 +44,7 @@ python 启动_universal_mcp.py
 
 ### 基本配置
 
-1. 在"基本配置"选项卡中设置MCP端点和智谱API密钥
+1. 在"基本配置"选项卡中设置MCP端点
 2. 点击"保存配置"按钮保存设置
 
 ### API管理
