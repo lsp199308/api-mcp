@@ -17,8 +17,7 @@
 ## 安装要求
 
 ```
-python 3.8+
-zhipuai>=1.0.0
+python 3.13
 requests>=2.31.0
 beautifulsoup4>=4.12.3
 websockets>=12.0
