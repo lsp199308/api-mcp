@@ -3,7 +3,6 @@ import requests
 import json
 import logging
 import sys
-import io
 import os
 from typing import Dict, Any
 from config_manager import load_config
@@ -27,9 +26,7 @@ class UniversalMCPTool:
         self.config = load_config()
         logger.info(f"配置加载完成，MCP端点: {self.config.get('MCP_ENDPOINT', '未设置')}")
 
-        # 设置MCP环境变量
         self._setup_mcp_environment()
-
         self._load_api_configs()
         self._register_apis_as_tools()
 
@@ -105,7 +102,7 @@ class UniversalMCPTool:
             self._register_single_api(cfg)
 
     def _register_single_api(self, api_config):
-        """注册单个 API"""
+        """注册单个 API，支持多参数自动映射与超长截断"""
         api_name = api_config["api_name"]
         api_url = api_config["api_url"]
         method = api_config["method"].upper()
@@ -119,22 +116,33 @@ class UniversalMCPTool:
         def api_caller(**kwargs):
             logger.info(f"调用 API: {api_name}")
             try:
-                # 自动识别主参数名
-                if isinstance(request_format, dict) and len(request_format) > 0:
-                    main_param = list(request_format.keys())[0]
-                else:
-                    main_param = "param"
+                fields = list(request_format.keys())
+                params = {}
+                extra = []
 
-                # 自动解析 AI 传入的 {"kwargs": "..."} 或 {"kwargs": {...}}
                 if "kwargs" in kwargs:
-                    if isinstance(kwargs["kwargs"], str):
-                        params = {main_param: kwargs["kwargs"]}
-                    elif isinstance(kwargs["kwargs"], dict):
-                        params = kwargs["kwargs"]
+                    value = kwargs["kwargs"]
+                    if isinstance(value, str):
+                        parts = value.strip().split()
+                        for i, field in enumerate(fields):
+                            if i < len(parts):
+                                params[field] = parts[i]
+                            else:
+                                params[field] = request_format.get(field, "")
+                        if len(parts) > len(fields):
+                            extra = parts[len(fields):]
+                    elif isinstance(value, dict):
+                        params.update(value)
                     else:
-                        return {"success": False, "error": f"Unsupported kwargs type: {type(kwargs['kwargs']).__name__}"}
-                else:
-                    params = kwargs.copy()
+                        return {"success": False, "error": f"Unsupported kwargs type: {type(value).__name__}"}
+
+                # 补全剩余字段
+                for field in fields:
+                    if field not in params:
+                        params[field] = request_format.get(field, "")
+
+                if extra:
+                    logger.info(f"额外参数被忽略: {extra}")
 
                 headers = {}
                 url = api_url
@@ -171,7 +179,6 @@ class UniversalMCPTool:
 
         api_caller.__name__ = api_name
         api_caller.__doc__ = description
-
         self.mcp.tool()(api_caller)
         logger.info(f"✅ 已注册 API 工具: {api_name}")
 
