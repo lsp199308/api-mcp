@@ -98,71 +98,78 @@ class UniversalMCPTool:
             self._register_single_api(api_config)
 
     def _register_single_api(self, api_config):
-        """注册单个 API"""
-        api_name = api_config["api_name"]
-        api_url = api_config["api_url"]
-        method = api_config["method"]
-        request_format = api_config.get("request_format", {})
-        description = api_config.get("description", "")
+    """Register a single API as an MCP tool"""
+    api_name = api_config["api_name"]
+    api_url = api_config["api_url"]
+    method = api_config["method"]
+    request_format = api_config.get("request_format", {})
+    description = api_config.get("description", "")
+    
+    # 获取API密钥相关配置
+    api_key = api_config.get("api_key", "")
+    key_location = api_config.get("key_location", "header")
+    key_name = api_config.get("key_name", "Authorization")
 
-        # API 密钥配置
-        api_key = api_config.get("api_key", "")
-        key_location = api_config.get("key_location", "header")
-        key_name = api_config.get("key_name", "Authorization")
-
-        def api_caller(**kwargs):
-            logger.info(f"Calling API: {api_name}")
-            try:
-                # 自动识别 request_format 第一个字段名作为主参数名
-                if isinstance(request_format, dict) and len(request_format) > 0:
-                    main_param = list(request_format.keys())[0]
+    # Create a dynamic function for this API
+    def api_caller(**kwargs):
+        logger.info(f"Calling API: {api_name}")
+        try:
+            # 自动识别主参数名（取 request_format 第一个键）
+            if isinstance(request_format, dict) and len(request_format) > 0:
+                main_param = list(request_format.keys())[0]
+            else:
+                main_param = "param"  # 默认名
+            
+            # 自动处理 {"kwargs": "北京"} 或 {"kwargs": {...}}
+            if "kwargs" in kwargs:
+                if isinstance(kwargs["kwargs"], str):
+                    params = {main_param: kwargs["kwargs"]}
+                elif isinstance(kwargs["kwargs"], dict):
+                    params = kwargs["kwargs"]
                 else:
-                    main_param = "value"  # fallback
+                    return {"success": False, "error": f"Unsupported kwargs type: {type(kwargs['kwargs']).__name__}"}
+            else:
+                params = kwargs.copy()
 
-                # 处理 {"kwargs": "北京"} 或 {"kwargs": {...}}
-                if "kwargs" in kwargs:
-                    if isinstance(kwargs["kwargs"], str):
-                        params = {main_param: kwargs["kwargs"]}
-                    elif isinstance(kwargs["kwargs"], dict):
-                        params = kwargs["kwargs"]
-                    else:
-                        return {"success": False, "error": f"Unsupported kwargs type: {type(kwargs['kwargs']).__name__}"}
-                else:
-                    params = kwargs.copy()
+            headers = {}
+            url = api_url
 
-                headers = {}
-                url = api_url
+            # 如果有API密钥配置
+            if api_key:
+                if key_location == "header":
+                    headers[key_name] = f"Bearer {api_key}" if key_name.lower() == "authorization" else api_key
+                elif key_location == "query":
+                    url += f"?{key_name}={api_key}" if "?" not in url else f"&{key_name}={api_key}"
+                elif key_location == "body":
+                    params[key_name] = api_key
 
-                # 如果有 API key，自动放置
-                if api_key:
-                    if key_location == "header":
-                        headers[key_name] = f"Bearer {api_key}" if key_name.lower() == "authorization" else api_key
-                    elif key_location == "query":
-                        url += f"?{key_name}={api_key}" if "?" not in url else f"&{key_name}={api_key}"
-                    elif key_location == "body":
-                        params[key_name] = api_key
+            logger.info(f"请求URL: {url}")
+            logger.info(f"请求参数: {params}")
 
-                # 发送请求
-                if method == "GET":
-                    response = requests.get(url, params=params, headers=headers)
-                elif method == "POST":
-                    response = requests.post(url, json=params, headers=headers)
-                else:
-                    return {"success": False, "error": f"Unsupported method: {method}"}
+            # 发送请求
+            if method == "GET":
+                response = requests.get(url, params=params, headers=headers)
+            elif method == "POST":
+                response = requests.post(url, json=params, headers=headers)
+            else:
+                return {"success": False, "error": f"Unsupported method: {method}"}
 
-                response.raise_for_status()
-                return {"success": True, "result": response.json()}
+            response.raise_for_status()
+            result_json = response.json()
+            logger.info(f"响应结果: {result_json}")
+            return {"success": True, "result": result_json}
 
-            except Exception as e:
-                logger.error(f"API call error: {str(e)}", exc_info=True)
-                return {"success": False, "error": str(e)}
+        except Exception as e:
+            logger.error(f"API call error: {str(e)}", exc_info=True)
+            return {"success": False, "error": str(e)}
 
-        api_caller.__name__ = api_name
-        api_caller.__doc__ = description
+    # 设置函数元数据
+    api_caller.__name__ = api_name
+    api_caller.__doc__ = description
 
-        # 注册为 MCP 工具
-        self.mcp.tool()(api_caller)
-        logger.info(f"Registered API as tool: {api_name}")
+    # 注册为MCP工具
+    self.mcp.tool()(api_caller)
+    logger.info(f"Registered API as tool: {api_name}")
 
     def reload_apis(self):
         """重新加载 API"""
@@ -263,3 +270,4 @@ if __name__ == "__main__":
         logger.error(f"程序运行出错: {str(e)}", exc_info=True)
         input("按 Enter 退出...")
         sys.exit(1)
+
