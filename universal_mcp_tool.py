@@ -31,7 +31,6 @@ class UniversalMCPTool:
         self._register_apis_as_tools()
 
     def _setup_mcp_environment(self):
-        """设置MCP所需的环境变量"""
         mcp_endpoint = self.config.get("MCP_ENDPOINT")
         if mcp_endpoint:
             os.environ["MCP_ENDPOINT"] = mcp_endpoint
@@ -41,7 +40,6 @@ class UniversalMCPTool:
             raise ValueError("MCP_ENDPOINT未配置")
 
     def _load_api_configs(self):
-        """加载 API 配置"""
         try:
             with open('api_configs.json', 'r', encoding='utf-8') as f:
                 self.api_configs = json.load(f)
@@ -51,7 +49,6 @@ class UniversalMCPTool:
             self.api_configs = []
 
     def _save_api_configs(self):
-        """保存 API 配置"""
         with open('api_configs.json', 'w', encoding='utf-8') as f:
             json.dump(self.api_configs, f, indent=2, ensure_ascii=False)
         logger.info(f"已保存 {len(self.api_configs)} 个 API 配置")
@@ -59,7 +56,6 @@ class UniversalMCPTool:
     def add_api(self, api_name: str, api_url: str, method: str,
                 request_format: Dict[str, Any], response_format: Dict[str, Any],
                 description: str):
-        """添加新 API 配置"""
         api_config = {
             "api_name": api_name,
             "api_url": api_url,
@@ -82,7 +78,6 @@ class UniversalMCPTool:
         return True
 
     def remove_api(self, api_name: str):
-        """删除 API"""
         initial_length = len(self.api_configs)
         self.api_configs = [cfg for cfg in self.api_configs if cfg["api_name"] != api_name]
         if len(self.api_configs) < initial_length:
@@ -93,16 +88,13 @@ class UniversalMCPTool:
         return False
 
     def list_apis(self):
-        """列出所有 API"""
         return self.api_configs
 
     def _register_apis_as_tools(self):
-        """注册所有 API 为 MCP 工具"""
         for cfg in self.api_configs:
             self._register_single_api(cfg)
 
     def _register_single_api(self, api_config):
-        """注册单个 API，支持多参数自动映射与超长截断"""
         api_name = api_config["api_name"]
         api_url = api_config["api_url"]
         method = api_config["method"].upper()
@@ -123,7 +115,8 @@ class UniversalMCPTool:
                 if "kwargs" in kwargs:
                     value = kwargs["kwargs"]
                     if isinstance(value, str):
-                        parts = value.strip().split()
+                        # 支持空格或逗号分隔
+                        parts = [p.strip() for p in value.replace(",", " ").split()]
                         for i, field in enumerate(fields):
                             if i < len(parts):
                                 params[field] = parts[i]
@@ -183,20 +176,17 @@ class UniversalMCPTool:
         logger.info(f"✅ 已注册 API 工具: {api_name}")
 
     def reload_apis(self):
-        """重新加载并注册所有 API"""
         self._load_api_configs()
         self._register_apis_as_tools()
         return True
 
     def run(self):
-        """运行 MCP 服务"""
         @self.mcp.tool()
         def register_api(api_name: str, api_url: str, method: str,
                          request_format: str, response_format: str,
                          description: str, api_key: str = "",
                          key_location: str = "header",
                          key_name: str = "Authorization") -> Dict[str, Any]:
-            """注册新 API"""
             try:
                 req_fmt = json.loads(request_format)
                 resp_fmt = json.loads(response_format)
@@ -229,12 +219,10 @@ class UniversalMCPTool:
 
         @self.mcp.tool()
         def list_registered_apis() -> Dict[str, Any]:
-            """列出所有注册的 API"""
             return {"success": True, "apis": self.list_apis()}
 
         @self.mcp.tool()
         def remove_registered_api(api_name: str) -> Dict[str, Any]:
-            """移除已注册的 API"""
             result = self.remove_api(api_name)
             self.reload_apis()
             return {"success": result, "message": f"API {api_name} 已移除" if result else "未找到该 API"}
@@ -247,7 +235,6 @@ class UniversalMCPTool:
             raise
 
     def test_api(self, api_name, api_url, method, params):
-        """测试 API 可用性"""
         try:
             if method.lower() == 'get':
                 r = requests.get(api_url, params=params)
