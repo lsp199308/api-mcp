@@ -171,6 +171,7 @@ class UniversalMCPTool:
     self.mcp.tool()(api_caller)
     logger.info(f"Registered API as tool: {api_name}")
 
+
     def reload_apis(self):
         """重新加载 API"""
         self._load_api_configs()
@@ -270,4 +271,5 @@ if __name__ == "__main__":
         logger.error(f"程序运行出错: {str(e)}", exc_info=True)
         input("按 Enter 退出...")
         sys.exit(1)
+
 
